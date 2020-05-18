@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
       index.each do |name_array|
       puts name_array
       
-      pigeon_list[name_array] = key
+      if pigeon_list[name_array] = key
       end
     end
   end
