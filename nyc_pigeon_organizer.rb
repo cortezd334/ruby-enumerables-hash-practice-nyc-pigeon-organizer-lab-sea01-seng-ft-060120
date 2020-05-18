@@ -2,9 +2,9 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   
-  data.collect do |key, value|
-    value.collect do |element, index|
-      index.collect do |name|
+  data.each do |key, value|
+    value.each do |element, index|
+      index.each do |name|
       puts name
       end
     end
