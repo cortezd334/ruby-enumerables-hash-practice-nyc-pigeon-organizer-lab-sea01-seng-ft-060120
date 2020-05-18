@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do |element, index|
       index.each do |name_array|
-      name_array
+      p name_array
       
-      p pigeon_list[name_array] = key
+      pigeon_list[name_array] = key
       end
     end
   end
