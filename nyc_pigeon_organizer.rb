@@ -3,7 +3,12 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   
   data.collect do |key, value|
-  
+    value.collect do |element, index|
+      element.collect do |index|
+      puts index
+      end
+    end
+  end
   # names = []
   # categories = []
   # descriptions = []
