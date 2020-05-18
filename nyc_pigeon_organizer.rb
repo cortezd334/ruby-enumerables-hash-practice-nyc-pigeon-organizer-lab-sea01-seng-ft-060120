@@ -4,8 +4,8 @@ def nyc_pigeon_organizer(data)
   
   data.collect do |key, value|
     value.collect do |element, index|
-      index.collect do |index|
-      puts index
+      index.collect do |name|
+      puts name
       end
     end
   end
