@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do |element, index|
       index.each do |name|
-      puts name
+      name
       
-      if !pigeon_list[name]
+      if !pigeon_list[name] # cuz this is now a truthy due to ! we can go through the code below, otherwise we don't
         pigeon_list[name] = {}
       end
       if !pigeon_list[name][key]
@@ -18,6 +18,7 @@ def nyc_pigeon_organizer(data)
     end
   end
 end
+p pigeon_list
   # names = []
   # categories = []
   # descriptions = []
