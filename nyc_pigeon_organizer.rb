@@ -1,14 +1,20 @@
 require 'pry'
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  binding.pry
+  #binding.pry
   data.each do |key, value|
     value.each do |element, index|
-      index.each do |name_array|
-      puts name_array
+      index.each do |name|
+      puts name
       
-      if pigeon_list[name_array] = key
+      if !pigeon_list[name]
+        pigeon_list[name] = {}
       end
+      if !pigeon_list[name][key]
+        pigeon_list[name][key] = []
+      end
+      pigeon_list[name][key] << element.to_s
+      binding.pry
     end
   end
 end
