@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][key] = []
       end
       pigeon_list[name][key] << element.to_s
-      binding.pry
+      #binding.pry
     end
   end
 end
